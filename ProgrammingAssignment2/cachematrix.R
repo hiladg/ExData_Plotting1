@@ -1,9 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
 
-## This Function makes a list of Matrix
+## This Function makes a list of Matrices
 ## and Cache their inverse
-## 	
+## It uses anonymous functions (getinverse, setinverse)
+## and defines the functions get, set	
 
 makeCacheMatrix <- function(x = matrix()) {
     	m <- NULL
@@ -23,6 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## this function calculates the inverse of the matrix created with the above function
 ## it first checks to see if the inverse has already been calculated
+## if so it tries to get it, otherwise it calculates it and sets the inverse of the 
+## matrices inside the list.
 
 cacheSolve <- function(x, ...) {
 		
